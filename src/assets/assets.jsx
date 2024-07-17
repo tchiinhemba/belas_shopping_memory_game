@@ -1,5 +1,5 @@
+import logo from "./svg/logo.svg"
 import callCenter from "./icons/call_center.svg";
-import nossaSeguros from "./icons/nossalogo.svg";
 
 import logo1 from "./icons/1.svg";
 import logo2 from "./icons/2.svg";
@@ -9,7 +9,8 @@ import logo5 from "./icons/5.svg";
 import logo6 from "./icons/6.svg";
 import logo7 from "./icons/7.svg";
 import logo8 from "./icons/8.svg";
-import bai from "./icons/iconBai.svg";
+import bai from "./icons/iconBelas.svg";
+
 
 export function assets() {
   return {
@@ -27,6 +28,6 @@ export function assets() {
       src: bai
     },
     callCenter,
-    nossaSeguros,
+    logo,
   };
 }
