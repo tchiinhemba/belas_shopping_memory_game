@@ -6,28 +6,31 @@ import {
   BiLogoInstagram,
   BiLogoYoutube,
 } from "react-icons/bi";
+
 import { assets } from "../../assets";
 
 const Start = () => {
-  const { callCenter, nossaSeguros } = assets();
+  const { callCenter, logo } = assets();
   const navigate = useNavigate();
 
-  console.log(window.innerWidth)
+  const handleClick = (navigate) => {
+    navigate("/info");
+  };
 
   return (
     <div className="wrapper_h">
       <div className="first_content_h">
         <div className="logo_container_h">
-          <img src={nossaSeguros} alt="Nossa Seguros Logo" />
+          <img src={logo} alt="Belas Logo" />
         </div>
         <div className="text_container_h">
-          <p>SEJA BEM-VINDO</p>
+          <p>SEJA BEM-VINDO AO</p>
           <p>
-            À <span>NOSSA SEGUROS</span>.
+            <span>BELAS SHOPPING</span>.
           </p>
           <p>VAMOS TESTAR A</p>
           <p>
-            <span>NOSSA MEMÓRIA</span>?
+            <span>SUA BELA MEMÓRIA</span>?
           </p>
         </div>
       </div>
@@ -66,16 +69,12 @@ const Start = () => {
                 <BiLogoYoutube />
               </li>
             </ul>
-            <span className="nossa_link_h">www.nossaseguros.ao</span>
+            <span className="nossa_link_h">www.belasshopping.co.ao</span>
           </div>
         </div>
       </footer>
     </div>
   );
-};
-
-const handleClick = (navigate) => {
-  navigate("/info");
 };
 
 export { Start };
